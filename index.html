@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kawadiwala</title>
+    <link rel="stylesheet"href="style.css"/>
+</head>
+<body>
+    <nav>
+        <h3 href="#title">Kawadiwala-Turn Waste into Worth</h3>
+        <h2>Menu</h2>
+        <a href="http://127.0.0.1:5500/sell.html"> Sell</a>
+        <a href="http://127.0.0.1:5500/Buy.html">Buy</a>
+        <a href="http://127.0.0.1:5500/Rate.html">Rate</a>
+        <a href="http://127.0.0.1:5500/Exchange.html">Exchange scrap</a>
+    </nav>
+    <main>
+        <section id="intro">
+            <h1>Kawadiwala</h1>
+            <h3>Ae loha Teena Plastic</h3>
+            <h2>Introduction</h2>
+            <p>Kawadiwala is simple and reliable online marketplace where you can sell you unused scrap/recycleable item
+            (paper,plastic,metal,electronics,etc).Buy what you need at affordable prices,or even exchange old item for 
+            something useful.We ensure fair pricing,transparent transactions,and promote recycling-so you earn money while
+            helping the environment.
+            </p>
+        </section>
+        <section id="Sell">
+            <h2>Sell your Scrap-Turn waste into cash</h2>
+            <p>Got old newspapers, plastic bottles, e-waste, or metal lying around? 
+            Don't let them gather dust! At Kawadiwala, you can easily sell your scrap items and
+            get the right value instantly.</p>
+            <h3>How it work</h3>
+            <p>List Your Item-Upload photos, choose a category (Paper, Plastic, Metal, E-waste, Others),
+             and set your price.
+
+            Connect with Buyers-Interested buyers in your area will reach out to you.
+
+            Get Paid-Close the deal with secure payment or cash-on-pickup options.</p>
+            <h3>Why Sell on Kawadiwala?</h3>
+
+            <p> Fair Prices-Get the best value for your scrap.</p>
+
+            <p> Doorstep Pickup-No hassle of going out; buyers or agents can pick it up.</p>
+
+            <p> Safe & Transparent-Verified buyers and clear payments.</p>
+
+            <p> Eco-Friendly-Contribute to recycling and reduce waste.</p>
+
+            <h3>Items You Can Sell:</h3>
+
+            <p>Old newspapers, books, and magazines</p>
+
+            <p>Plastic bottles, containers, packaging</p>
+
+            <p>Metal scrap (iron, aluminum, copper, steel)</p>
+
+            <p>E-waste (phones, chargers, laptops, wires)</p>
+            <p>Household junk & appliances</p>
+            <h2>Enter your address</h2>
+            <form action="Submit_address.php"method="post">
+                <label for="name">Full Name:</label><br>
+                <input type="text"id="name"name="name"required><br><br>
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel"id="phone"name="phone"required><br><br>
+                <label for="address">Street address:</label><br>
+                <textarea id="address"name="address"rows="3"cols="30"required></textarea><br><br>
+                <label for="city">City:</label><br>
+                <input type="text"id="city"name="city"required><br><br>
+                <label for="pincode">Pincode:</label><br>
+                <input type="text"id="pincode"name="pincode"required><br><br>
+                <label for="state">State:</label><br>
+                <input type="text"id="state"name="state"required><br><br>
+                <input type="submit"value="Submit Address">
+            </form>
+            <h3> Sell your scrap-upload a photo</h3>
+            <form action="uplaod.php"method="post"enctype="multipart/form-data">
+                <label for="itemName">Item Name</label><br>
+                <input type="text"id="itemName"name="itemName"required><br><br>
+                <label for="itemPhoto">Upload Photo:</label><br>
+                <input type="file"id="itemPhoto"accept="image/*"reqired><br><br>
+                <input type="submit"value="Uplaod & Sell">
+            </form>
+            <p>CTA:
+            Don't throw it away — sell it today! Post your scrap now and turn your waste into worth.</p>
+        </section>
+        <section id ="Buy">
+          <h2>Buy useful items at the best price</h2>
+          <p>Looking for affordable, reusable, or recycled items? Kawadiwala makes it easy to buy what you need —
+          from household items to scrap materials — all in one place. Save money, find unique items,
+          and support a cleaner, greener environment.</p>
+          <h3>How it works:</h3>
+          <p>Browse Listings – Explore categories like Paper, Plastic, Metal, E-waste, and More.</p>
+          <p>Choose What You Need – Check details, pictures, and seller information.</p>
+          <p>Secure Purchase – Pay online or at pickup, with safe and verified transactions.</p>
+          <h3> Why Buy on kawadiwala?</h3>
+          <p> Affordable Prices – Get items cheaper than market rates.</p>
+          <p> Reusable & Sustainable – Reduce waste by giving products a second life.</p>
+          <p> Safe Deals – Verified sellers and transparent pricing.</p>
+          <p> Eco-Friendly Choice – Every purchase contributes to recycling and sustainability.</p>
+          <h3>Items you can Buy</h3>
+          <p>Recycled paper, books, and magazines.</p>
+          <p>Metal scrap for reuse in projects/industries</p>
+          <p>Plastic containers, bottles, and raw material</p>
+          <p>Second-hand electronics (mobiles, laptops, chargers, parts)</p>
+          <P>Household items and furniture at budget prices</P>
+          <h2>Seacrh item you want to buy</h2>
+          <form action="search_results.php"method="get">
+            <label for="search">Enter Item Name:</label><br>
+            <input type="search"id="search"name="query"placeholder="e.g Plastic bottle,old newpaper"required>
+            <input type="submit"value="Search">
+          </form>
+          <p>CTA:
+          Shop smart, save money, and save the planet! Start browsing today and discover hidden treasures on
+           Kawadiwala.</p>
+        </section>
+        <section id ="Exchange">
+        <h2>Exchange — Swap What You Don’t Need, Get What You Do</h2>
+        <p>Why throw away something when it can be useful to someone else? With Kawadiwala Exchange,
+         you can trade your unused items for things you actually need. It’s simple, smart, and sustainable!</p>
+        <h3>How it works</h3>
+        <p>List Your Item for Exchange – Upload a photo and mention what you’re looking for in return.</p>
+        <p></p>Find a Match – Browse exchange offers or connect with people who want your item.</p>
+        <p>Swap Securely – Meet or arrange a pickup, and exchange items safely.</p>
+        <h2>Search Item for Exchange</h2>
+        <form action="exchange_results.php"method="get">
+            <label for="want">Item you want:</label><br>
+            <input type="text"id="want"name="want"Placeholder="e.g.OLDbook,Metal parts"required><br><br>
+            <label for="offer">Item you offer in exchange:</label><br>
+            <input type="text"id="offer"name="offer"Placeholder="e.g.plastic bottles,newspapers"required><br><br>
+            <label for="category">Choose category:</label><br>
+            <select id="category"name="category">
+                <option value="">All categories</option>
+                <option value="Paper">Paper</option>
+                <option value="plastic">Plastic</option>
+                <option value="metal">Metal</option>
+                <option value="ewaste">Ewaste</option>
+                <option vlaue="others">Others</option>
+                </select><br><br>
+                <input type="submit"value="Search Exchange">
+        </form>
+        <p>CTA:
+        Give your old items a new purpose — start exchanging today!
+       </p>
+        </section>
+        <section id="Rate">
+        <h2>Rate Section - Get the Best Value for Your Scrap</h2>
+        <p>At Kawadiwala, we believe in fair and transparent pricing. No hidden costs,
+        no middlemen - just the right rates for your scrap items. Our rate section
+        helps you check the current market price of different categories so you always know what your waste is worth.</p>
+
+        <h3>How It Works:</h3> 
+
+        <p>1. Select Category - Choose from Paper, Plastic, Metal, E-waste, or Others.</p>
+
+        <p>2. Check Updated Rates - See the latest per kg or per item price.
+
+        <p>3. Sell with Confidence - Get the same price as listed when you sell.</p>
+        <h2>Scrap Material Rates</h2>
+
+          <table>
+
+                       <thead>
+
+                       <tr>
+                       <th>Scrap Category</th>
+                       <th>Example Items</th>
+                       <th>Rate (per Kg) *</th>
+                       </tr>
+                       </thead>
+
+                       <tbody>
+                       <tr>
+                       <td>Paper</td>
+                       <td>Newspaper, books, magazines</td>
+                       <td>₹10 15</td>
+                       </tr>
+                       <tr>
+                       <td>Plastic</td>
+                       <td>Bottles, containers, packaging</td>
+                       <td>₹20 - ₹30</td>
+                       </tr>
+                       <tr>
+                       <td>Metal</td>
+                       <td>Iron, copper, aluminum</td>
+                       <td>₹40 - ₹80</td>
+                       </tr>
+                       <tr>
+                       <td>E-waste</td>
+                       <td>Mobiles, chargers, laptops</td>
+                       <td>₹50 ₹100</td>
+                       </tr>
+                       </tbody>
+                    </table>
+        <h2>Check rate here</h2>
+        <form action="check_rate.php" method="get">
+            <label for="item">Select Item:</label><br>
+            <select id="item"name="item"requied>
+                <option value="">--Choose Item--</option>
+                <option value="">All categories</option>
+                <option value="Paper">Paper</option>
+                <option value="plastic">Plastic</option>
+                <option value="metal">Metal</option>
+                <option value="ewaste">Ewaste</option>
+                <option vlaue="others">Others</option>
+            </select><br><br>
+            <input type="submit" value="Check Rate">
+
+        </form>
+        </section>
+<section id="Help">
+            <h2>Help & Support</h2>
+            <p>Got a question or facing an issue? Our Kawadiwala Help Center ensures that your selling, 
+            buying, or exchanging experience is smooth and worry-free.
+
+<p>How We Can Help You:
+
+<p>FAQs – Find answers to common questions quickly.
+    <h2>Frequently Asked Questions (FAQs)</h2>
+
+<details>
+  <summary>1. How can I sell my scrap?</summary>
+  <p>Go to the "Sell" section, upload item details with a photo, and submit. Buyers or pickup agents will contact you.</p>
+</details>
+
+<details>
+  <summary>2. What types of scrap can I sell?</summary>
+  <p>You can sell paper, plastic, metals, e-waste, appliances, and more recyclable items.</p>
+</details>
+
+<details>
+  <summary>3. Is there a doorstep pickup service?</summary>
+  <p>Yes! Depending on your location, our pickup agents can collect scrap directly from your home.</p>
+</details>
+
+<details>
+  <summary>4. How do I get paid?</summary>
+  <p>You can receive payment via cash, UPI, or online transfer after the deal is finalized.</p>
+</details>
+</p>
+<p>Customer Support – Reach us via phone or email for any issue.
+    <a href="tel:7439740239">Call us</a>
+    <a href="mailto:info@kawadwala.com">Email us</a>
+</p>
+
+<p>Safe Transactions Guide – Tips to ensure secure deals.
+    <a href="https://kawadiwala.com">visit kawadiwala</a>
+</p>
+
+<p>Pickup & Delivery Support – Assistance with logistics and scheduling.
+    <a href="https://kawadiwala.com">visit kawadiwala</a>
+</p>
+        </section>
+        <section id="About us">
+            <h3>About us</h3>
+            <p>Kawadiwala’s mission is to transform waste into valuable resources. Whether you are a household, 
+            a small business, or an industry, you can sell what you don’t need and generate income. Buyers can find useful,
+            affordable, and reusable items easily. With the exchange option, you can swap your old stuff for something more
+            useful without spending extra money. Our process is safe, transparent, and environmentally friendly —
+            encouraging recycling and reducing landfill waste.</p>
+        </section>
+    </main>
+</body>
+</html>
